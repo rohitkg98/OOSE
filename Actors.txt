@@ -1,0 +1,26 @@
+ Actors : 
+ 	- User
+ 	- SuperUser
+ 	- Running Games/Applications
+ 	- Game Developers 
+ 	- Security Suite
+ 	- Update Suite
+ 	
+User Stories : 
+	
+	- As a User I want a user interface for selection of differnt games and apps , so that I can choose a game or application I want to run.
+	- As a User I can install or uninstall games and application because I want to manage what is installed on my system.
+	- As a User I want the ability to change or customize themes, for personalized experience. 
+	
+	- As a SuperUser I can create, delete and manage permissions of different profiles, so that sharing of the same device with multiple user with different access is possible. 
+	
+	- As a Game Developer I want the security disabling and debugging features, so that I can test my own software on the device. 
+	
+	- As a Running Game/Application I want access to different hardware inputs, for the purpose of recognising what user wants to do.
+	- As a Running Game/Application I can request resources from the Operating System, so that I can provide differnet functionalities.  
+	
+	- As a Update Suite I want to be able to push updates and patches to the system, in order to keep all system optimized and error free. 
+	- As a Update Suite I can recieve error and bug reports from the system, so that in the next patch those errors can be fixed.
+	
+	- As a Security Suite I want to verify the installed software on the system over the internet, so that I can perform different checks to ensure no security or piracy policy breaches. 
+	  

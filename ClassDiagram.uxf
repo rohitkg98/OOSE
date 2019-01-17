@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.3.0">
-  <zoom_level>8</zoom_level>
+  <zoom_level>1</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>304</y>
-      <w>168</w>
-      <h>152</h>
+      <x>565</x>
+      <y>278</y>
+      <w>21</w>
+      <h>19</h>
     </coordinates>
     <panel_attributes>Memory
 --
-MemoryTable: Integer[]
+-MemoryTable: Integer[]
 --
-read():string
-freeMemory()
-write(data:string)
-getFreeMemory():integer
-getTotalMemory():integer
++read():string
++freeMemory()
++write(data:string)
++getFreeMemory():integer
++getTotalMemory():integer
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>184</y>
-      <w>168</w>
-      <h>152</h>
+      <x>589</x>
+      <y>220</y>
+      <w>21</w>
+      <h>19</h>
     </coordinates>
     <panel_attributes>Game
 --
-Name: String
-Icon: ImageFile
-LastPlayed: Date
+-Name: String
+-Icon: ImageFile
+-LastPlayed: Date
 --
-start(): Integer
-close(): Integer
-requestResources(): Integer
-updateDate(date: Date)
-uninstallGame()
++start(): Integer
++close(): Integer
++requestResources(): Integer
++updateDate(date: Date)
++uninstallGame()
 
 
 </panel_attributes>
@@ -48,10 +48,10 @@ uninstallGame()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>464</x>
-      <y>304</y>
-      <w>168</w>
-      <h>152</h>
+      <x>558</x>
+      <y>305</y>
+      <w>21</w>
+      <h>19</h>
     </coordinates>
     <panel_attributes>Process
 --
@@ -69,10 +69,10 @@ end()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>568</x>
-      <y>136</y>
-      <w>168</w>
-      <h>152</h>
+      <x>590</x>
+      <y>278</y>
+      <w>21</w>
+      <h>19</h>
     </coordinates>
     <panel_attributes>Resource
 --
@@ -80,17 +80,17 @@ NoOfProcesses: Integer
 TotalMemory: Integer
 --
 handleRequest()
-
+requestConnection()
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
-      <y>160</y>
-      <w>168</w>
-      <h>192</h>
+      <x>620</x>
+      <y>286</y>
+      <w>21</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>Config Settings
 --
@@ -115,19 +115,19 @@ enableDevOptions()
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>112</x>
-      <y>40</y>
-      <w>168</w>
-      <h>96</h>
+      <x>620</x>
+      <y>235</y>
+      <w>21</w>
+      <h>12</h>
     </coordinates>
-    <panel_attributes>User
+    <panel_attributes>Normal User
 --
-Name: String
-Email: String
-Type: String
+-Name: String
+-Email: String
+-Type: String
 --
-changeName(name: String)
-login(username: String, password: String)
++changeName(name: String)
++login(username: String, password: String)
 
 
 </panel_attributes>
@@ -136,22 +136,525 @@ login(username: String, password: String)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>72</x>
-      <y>392</y>
-      <w>168</w>
-      <h>152</h>
+      <x>589</x>
+      <y>254</y>
+      <w>21</w>
+      <h>19</h>
     </coordinates>
     <panel_attributes>OperatingSystem
 --
 Version: Integer
 
 --
-updateOS()
-verifyData()
-installGame()
-uninstallGame()
++updateOS()
++verifyData()
++install()
++uninstall()
 
 </panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>629</x>
+      <y>218</y>
+      <w>23</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;User&gt;&gt;
+--
+-Name: String
+-Email: String
+-Type: String
+--
++changeName(name: String)
++login(username: String, password: String)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>649</x>
+      <y>235</y>
+      <w>19</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>SuperUser
+--
+-Name: String
+-Email: String
+-Type: String
+-Key: String
+--
++changeName(name: String)
++login(username: String, password: String)
++getKey()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>629</x>
+      <y>229</y>
+      <w>8</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;60.0;40.0;10.0;40.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>644</x>
+      <y>229</y>
+      <w>15</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;30.0;130.0;30.0;130.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>599</x>
+      <y>238</y>
+      <w>17</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..n
+m2=0..1
+requests resource &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>609</x>
+      <y>219</y>
+      <w>22</w>
+      <h>5</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=3
+m2=1
+&lt; plays</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>609</x>
+      <y>269</y>
+      <w>13</w>
+      <h>26</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0;70.0;240.0;110.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>585</x>
+      <y>269</y>
+      <w>6</w>
+      <h>19</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>40.0;10.0;20.0;10.0;20.0;170.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>565</x>
+      <y>296</y>
+      <w>35</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>330.0;10.0;330.0;60.0;10.0;60.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>596</x>
+      <y>272</y>
+      <w>3</w>
+      <h>8</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>609</x>
+      <y>249</y>
+      <w>47</w>
+      <h>17</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;140.0;430.0;140.0;440.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>609</x>
+      <y>246</y>
+      <w>21</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;150.0;180.0;150.0;180.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>558</x>
+      <y>254</y>
+      <w>21</w>
+      <h>13</h>
+    </coordinates>
+    <panel_attributes>Application Manager
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
++installGame()
++uninstallGame()
++updateGame()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>578</x>
+      <y>258</y>
+      <w>13</w>
+      <h>3</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>566</x>
+      <y>210</y>
+      <w>72</w>
+      <h>46</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=n
+&lt; manages</panel_attributes>
+    <additional_attributes>10.0;440.0;10.0;20.0;690.0;20.0;690.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>573</x>
+      <y>234</y>
+      <w>18</w>
+      <h>22</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;200.0;10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>536</x>
+      <y>269</y>
+      <w>21</w>
+      <h>19</h>
+    </coordinates>
+    <panel_attributes>Network
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
++requestConnection()
++freeConnection()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>556</x>
+      <y>267</y>
+      <w>35</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>330.0;10.0;70.0;10.0;70.0;90.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>589</x>
+      <y>339</y>
+      <w>21</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>Display
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
++check()
++requestControl()
++controlBrightness()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>598</x>
+      <y>332</y>
+      <w>3</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>607</x>
+      <y>332</y>
+      <w>16</w>
+      <h>9</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0;140.0;40.0;140.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>593</x>
+      <y>322</y>
+      <w>21</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Hardware&gt;&gt;
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
+check()
+requestControl()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>611</x>
+      <y>339</y>
+      <w>21</w>
+      <h>12</h>
+    </coordinates>
+    <panel_attributes>Speakers
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
++check()
++requestControl()
++setVolume()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>613</x>
+      <y>330</y>
+      <w>25</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;230.0;10.0;230.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>633</x>
+      <y>339</y>
+      <w>21</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>Storage
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
++check()
++requestControl()
++write()
++read()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>656</x>
+      <y>339</y>
+      <w>21</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>Game Cartridge
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
++check()
++requestControl()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>613</x>
+      <y>328</y>
+      <w>52</w>
+      <h>13</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;500.0;10.0;500.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>549</x>
+      <y>337</y>
+      <w>21</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>Wi-Fi
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
++check()
++requestControl()
++connect()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>554</x>
+      <y>324</y>
+      <w>41</w>
+      <h>15</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>390.0;10.0;10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>287</y>
+      <w>3</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;500.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>352</y>
+      <w>21</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>Controller
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
++check()
++requestControl()
++handleEvent()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>578</x>
+      <y>329</y>
+      <w>17</w>
+      <h>25</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>268</y>
+      <w>111</w>
+      <h>92</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+&lt; gets input</panel_attributes>
+    <additional_attributes>200.0;10.0;1010.0;10.0;1010.0;890.0;10.0;890.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>605</x>
+      <y>296</y>
+      <w>4</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>665</x>
+      <y>323</y>
+      <w>21</w>
+      <h>11</h>
+    </coordinates>
+    <panel_attributes>GPU
+--
+-id: Long {composite}
+_-ClassAttribute: Long_
+--
+check()
+requestControl()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>613</x>
+      <y>324</y>
+      <w>54</w>
+      <h>3</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;520.0;10.0</additional_attributes>
   </element>
 </diagram>
