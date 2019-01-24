@@ -1,0 +1,84 @@
+Objects that can have states... 
+
+-operating system ?
+
+	states : 
+	
+	-
+
+-user - normal and developer ?  
+
+	states :
+	
+	-user logs in ? 
+	-user logs out ? 
+	-user account being deleted ? 
+	-user being verified ? 
+ 
+-game
+
+	states : 
+	
+	-game start 
+	-game running 
+	-game closed 
+	
+-config settings 
+
+	states : 
+	
+	-config creation
+	-user makes a change 
+	-change is applied ? 
+
+-memory 
+	
+	states : 
+	
+	-memory being used 
+	-memory being update ?
+	-memory freed
+
+-resources ? 
+
+	states : 
+	
+	-creation
+	-in use
+	-free 
+	-being assigned 
+	-request queue
+
+-process 
+
+	states: 
+	
+	-process birth
+	-process death
+	-process running 
+	-process is waiting 
+
+-app manager ?
+
+	state : 
+	
+	-on ? 
+	-working ? 
+	-dormant ? 
+
+-network ?
+
+-controller ? 
+
+-wifi 
+
+-display ?
+
+-speakers ?
+
+-storage 
+
+-game cartridge 
+
+-GPU ... ? !! 
+
