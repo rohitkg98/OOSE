@@ -4,8 +4,8 @@
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
-      <x>130</x>
-      <y>130</y>
+      <x>80</x>
+      <y>90</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -15,10 +15,10 @@
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>110</x>
-      <y>60</y>
-      <w>630</w>
-      <h>440</h>
+      <x>50</x>
+      <y>30</y>
+      <w>690</w>
+      <h>470</h>
     </coordinates>
     <panel_attributes>User Plays a game
 --
@@ -29,8 +29,8 @@ valign=top
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>170</x>
-      <y>120</y>
+      <x>140</x>
+      <y>80</y>
       <w>90</w>
       <h>40</h>
     </coordinates>
@@ -40,60 +40,60 @@ valign=top
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>130</y>
-      <w>50</w>
+      <x>90</x>
+      <y>90</y>
+      <w>70</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;30.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;50.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
-      <y>120</y>
-      <w>130</w>
-      <h>80</h>
+      <x>220</x>
+      <y>80</y>
+      <w>150</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 requests resources</panel_attributes>
-    <additional_attributes>50.0;20.0;70.0;20.0;70.0;60.0</additional_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0;130.0;100.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>250</x>
+      <x>320</x>
       <y>300</y>
       <w>140</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>manages hardware</panel_attributes>
+    <panel_attributes>running</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
+      <x>220</x>
       <y>330</y>
-      <w>100</w>
+      <w>160</w>
       <h>70</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
-updates</panel_attributes>
-    <additional_attributes>80.0;30.0;80.0;50.0;10.0;50.0;10.0;10.0;40.0;10.0</additional_attributes>
+updates hardware</panel_attributes>
+    <additional_attributes>140.0;30.0;140.0;50.0;10.0;50.0;10.0;10.0;100.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>380</x>
+      <x>450</x>
       <y>310</y>
-      <w>140</w>
+      <w>70</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 exits</panel_attributes>
-    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;50.0;20.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
@@ -131,7 +131,7 @@ exits</panel_attributes>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>250</x>
+      <x>280</x>
       <y>180</y>
       <w>160</w>
       <h>40</h>
@@ -142,19 +142,19 @@ exits</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>210</x>
+      <x>220</x>
       <y>190</y>
-      <w>90</w>
-      <h>60</h>
+      <w>110</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 not granted</panel_attributes>
-    <additional_attributes>70.0;30.0;70.0;40.0;10.0;40.0;10.0;10.0;40.0;10.0</additional_attributes>
+    <additional_attributes>90.0;30.0;90.0;50.0;10.0;50.0;10.0;10.0;60.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
+      <x>370</x>
       <y>210</y>
       <w>80</w>
       <h>110</h>
